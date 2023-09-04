@@ -1,0 +1,162 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("./social-proof-section-master/images/bg-pattern-top-desktop.svg"),
+        url("./social-proof-section-master/images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    max-width: 1115px;
+    justify-content: space-around;
+    margin-top: 117px;
+}
+
+h1 {
+    max-width: 330px;
+    color: #522552;
+    font-size: 3rem;
+}
+
+.heading-container p {
+    max-width: 411px;
+    color: #ab8da6;
+    line-height: 24px;
+}
+
+.block-rate {
+    min-height: 57px;
+    min-width: 447px;
+    background: #f7f2f8;
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+    margin-top: 16px;
+    max-width: 447px;
+}
+
+.block-rate:nth-of-type(2) {
+    margin-left: 85px;
+}
+
+.block-rate:nth-of-type(3) {
+    margin-left: 132px;
+}
+
+.stars-container {
+    margin-left: 31px;
+    margin-right: 31px;
+    display: flex;
+    justify-content: space-between;
+    width: 119px;
+}
+
+span.p-rate {
+    color: #53205a;
+    font-weight: bold;
+}
+
+.review-block {
+    max-width: 351px;
+    min-width: 351px;
+    background: #511f50;
+    min-height: 235px;
+    border-radius: 0.3rem;
+    color: white;
+}
+
+.reviews-row {
+    display: flex;
+    width: 1112px;
+    justify-content: space-between;
+    margin-top: 59px;
+}
+
+.review-block:nth-of-type(2) {
+    margin-top: 18px;
+}
+
+.review-block:nth-of-type(3) {
+    margin-top: 34px;
+}
+
+.reviewer-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.reviewer-info span:nth-of-type(2) {
+    max-width: 100px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.reviewer-info span:nth-of-type(2)>span {
+    color: #ee75b8;
+    font-weight: 100;
+    margin-top: 9px;
+    display: inline-block;
+}
+
+.review-block p {
+    min-height: 86px;
+
+    max-width: 287px;
+    margin-left: 32px;
+    line-height: 22px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .heading-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .block-rate {
+        margin-left: 0px !important;
+        max-width: 327px;
+        min-width: 327px;
+        display: block;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .stars-container {
+        margin: auto;
+    }
+
+    span.p-rate {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .reviews-row {
+        display: flex;
+        width: 24rem;
+        justify-content: center;
+        margin-top: 59px;
+        flex-direction: column;
+        margin-left: auto;
+    }
+}
